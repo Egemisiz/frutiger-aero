@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Frutiger Aero 3D World</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Three.js 3D Engine -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+</head>
+<body>
+
+    <div id="webgl-container"></div>
+
+    <!-- HUD Overlay -->
+    <div id="hud">
+        <div class="hud-card">💎 Kristal: <span id="crystal-count">0</span></div>
+        <div class="hud-card">⭐ Seviye: <span id="level-count">1</span></div>
+    </div>
+
+    <!-- Frutiger Aero UI (Glassmorphism Menu) -->
+    <div id="ui-layer">
+        <div class="aero-window" id="main-menu">
+            <div class="aero-header">
+                <div class="aero-title">🌐 FRUTIGER AERO 3D WORLD</div>
+            </div>
+            <div class="aero-body">
+                <div class="aero-sidebar">
+                    <button class="aero-btn green" id="btn-play">▶ OYNA</button>
+                    <button class="aero-btn" id="btn-shop">🛒 MAĞAZA</button>
+                    <button class="aero-btn" id="btn-settings">⚙ AYARLAR</button>
+                    <button class="aero-btn" id="btn-credits">📜 EMEĞİ GEÇENLER</button>
+                </div>
+                <div class="aero-content" id="tab-content">
+                    <h3>Frutiger Aero 3D Dünyasına Hoş Geldiniz!</h3>
+                    <p>Cam binalar, parlak gökyüzü ve doğa konsepti içeren 3D dünyayı keşfedin.</p>
+                    <br>
+                    <p><b>Kontroller:</b></p>
+                    <p>• <b>WASD / Yön Tuşları:</b> Karakteri Hareket Ettir</p>
+                    <p>• <b>Space (Boşluk):</b> Zıpla</p>
+                    <p>• <b>Fare:</b> Kameraya yön ver ve kristalleri topla</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="main.js"></script>
+</body>
+</html>
